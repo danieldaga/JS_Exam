@@ -66,3 +66,20 @@ multiThree(10)
 
 //exercise 7
 
+const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+function DNI(numDNI, Letter) {
+    if (numDNI < 0 || numDNI > 99999999) {
+        return console.log('the number is not valid');
+    } else {
+        calculateLetter = letras[numDNI % 23]
+        if (calculateLetter != Letter) {
+            return console.log('The letter is not valid');
+        }else{
+            console.log('The number and letter are correct');
+        }
+    }
+    return
+}
+
+DNI(53473698, 'D')
