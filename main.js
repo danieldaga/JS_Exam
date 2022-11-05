@@ -43,12 +43,26 @@ listEvens(8)
 //exercise 5
 
 function multTable(num) {
-    let result 
+    let result
     for (let i = 0; i < 11; i++) {
         result = i * num
         console.log(`${i} x ${num} = ${result}`);
     }
+    return
 }
 multTable(7)
 
 //exercise 6 
+
+function multiThree(num) {
+    for (let i = 0; i < num; i++) {
+        if (i % 3 === 0) {
+            console.log(i);
+        }
+    }
+}
+
+multiThree(10)
+
+//exercise 7
+
